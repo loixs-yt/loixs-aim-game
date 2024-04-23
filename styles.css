@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Blocked';
+    src: url('blocked.ttf') format('truetype');
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Blocked', sans-serif;
+    overflow: hidden;
+    background-color: #111;
+    color: white;
+  }
+  
+  #gameArea {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #score-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  #score {
+    font-family: 'Blocked', sans-serif;
+    text-align: center;
+  }
+  
+  #instruction-text {
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .btn-relancer {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF6347;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .btn-relancer:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+  }
+  
+  .btn-relancer:hover:before {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+  
+  .btn-relancer:hover {
+    background-color: #FF6347;
+  }
+  
+  .btn-relancer:active {
+    background-color: #8B0000;
+  }
+  
+  #target {
+    width: 130px;
+    height: 130px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    box-shadow: 0px 0px 20px 10px rgba(255, 0, 0, 0.5);
+  }
+  
+  .game-over-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    font-weight: bold;
+  }
+  

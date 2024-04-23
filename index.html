@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOIXS AIM GAME</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+</head>
+<body>
+  <audio id="backgroundMusic" loop>
+    <source src="MusiqueJeu.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="collisionSound">
+    <source src="bruit1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="gameOverSound">
+    <source src="gameover.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <div id="gameArea">
+    <div id="target"></div>
+    <div id="follower"></div>
+    <div id="score-container">
+      <h1 id="score">score: <span>0</span></h1>
+      <a href="index.html" class="btn-relancer">Relancer</a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
